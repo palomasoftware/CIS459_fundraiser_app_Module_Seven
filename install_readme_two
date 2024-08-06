@@ -1,0 +1,288 @@
+ ls
+    2  sudo apt-get update
+    3  sudo apt-get install -y ca-certificates curl gnupg
+    4  sudo mkdir -p /etc/apt/keyrings
+    5  curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
+    6  NODE_MAJOR=20
+    7  echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_$NODE_MAJOR.x nodistro main" | sudo tee /etc/apt/sources.list.d/nodesource.list
+    8  sudo apt-get update
+    9  sudo apt-get install nodejs -y
+   10  npm install web3
+   11  npm install --save-dev @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle ethereum-waffle chai
+   12  npm i @openzeppelin/contracts@4.5.0
+   13  npx create-react-app fundraiser
+   14  cd fundraiser/
+   15  ls
+   16  npx hardhat init
+   17  vi hardhat.config.js
+   18  cd contracts/
+   19  ls
+   20  vi FundraiserFactory.sol
+   21  ls
+   22  rm Lock.sol
+   23  vi Fundraiser.sol
+   24  ls
+   25  cd ..
+   26  ls
+   27  mkdir scripts
+   28  ls
+   29  cd scripts/
+   30  ls
+   31  vi deploy.js
+   32  ls
+   33  cd ..
+   34  ls
+   35  cd src
+   36  ls
+   37  vi App.js
+   38  cd ..
+   39  ls
+   40  cd node_modules/
+   41  ls
+   42  cd @openzeppelin/
+   43  ls
+   44  cd ..
+   45  ls
+   46  cd ~home
+   47  cd ~ubuntu
+   48  ls
+   49  cd fundraiser/
+   50  ls
+   51  npm i @openzeppelin/contracts@4.5.0
+   52  ls
+   53  cd node_modules/
+   54  ls
+   55  cd @openzeppelin/
+   56  ls
+   57  cd contracts
+   58  ls
+   59  cd ..
+   60  ls
+   61  cd contracts
+   62  ls
+   63  cd utils
+   64  ls
+   65  cd math
+   66  ls
+   67  cd ..
+   68  ls
+   69  cd ..
+   70  ls
+   71  cd access
+   72  ls
+   73  cd ..
+   74  npx hardhat node --hostname ec2-52-43-105-145.us-west-2.compute.amazonaws.com
+   75  cd ..
+   76  npm install @material-ui/core --save
+   77  cd fundraiser/
+   78  ls
+   79  npx hardhat node --hostname ec2-52-43-105-145.us-west-2.compute.amazonaws.com
+   80  cd ..
+   81  ls
+   82  cd fundraiser/
+   83  ls
+   84  ec2-52-43-105-145.us-west-2.compute.amazonaws.com
+   85  cd src
+   86  vi NewFundraiser.js
+   87  ls
+   88  vi App.js
+   89  cd ..
+   90  npx hardhat node --hostname ec2-52-43-105-145.us-west-2.compute.amazonaws.com
+   91  jls
+   92  ls
+   93  cd fundraiser/
+   94  ls
+   95  cd contracts
+   96  ls
+   97  vi FundraiserFactory.sol
+   98  vi Fundraiser.sol
+   99  cd ..
+  100  ls
+  101  cd contracts
+  102  ls
+  103  vi FundraiserFactory.sol
+  104  cd ..
+  105  npx   hardhat run scripts/deploy.js --network localhost
+  106  ls
+  107  cd contracts/
+  108  ls
+  109  vi Fundraiser.sol
+  110  cd ..
+  111  ls
+  112  npx   hardhat run scripts/deploy.js --network localhost
+  113  npm start
+  114  ls
+  115  cd src
+  116  ls
+  117  vi App.js
+  118  cd ..
+  119  npx   hardhat run scripts/deploy.js --network localhost
+  120  npm start
+  121  cd ..
+  122  npm install react-router-dom --save
+  123  history
+  124  cd fundraiser/
+  125  npx   hardhat run scripts/deploy.js --network localhost
+  126  npm start
+  127  cd src
+  128  vi App.js
+  129  cd ..
+  130  npm start
+  131  cd src
+  132  vi App.js
+  133  cd ..
+  134  npm start
+  135  cd src
+  136  vi App.js
+  137  vi NewFundraiser.js
+  138  vi Home.js
+  139  cd ..
+  140  npx   hardhat run scripts/deploy.js --network localhost
+  141  npm start
+  142  cd src
+  143  vi App.js
+  144  vi NewFundraiser.js
+  145  ls
+  146  npx create-react-app hello
+  147  cd hello
+  148  ls
+  149  npx hardhat init
+  150  ls
+  151  vi hardhat.config.js
+  152  cd contracts/
+  153  ls
+  154  vi Hello.sol
+  155  cd ..
+  156  ls
+  157  mkdir scripts
+  158  cd scripts
+  159  ls
+  160  vi deploy.js
+  161  jls
+  162  ls
+  163  cd ..
+  164  ls
+  165  cd hello
+  166  ls
+  167  npx   hardhat run scripts/deploy.js --network localhost
+  168  cd contracts/
+  169  ls
+  170  rm Lock.sol
+  171  cd ..
+  172  npx   hardhat run scripts/deploy.js --network localhost
+  173  npx hardhat console --network localhost
+  174  jls
+  175  cd src
+  176  ls
+  177  npx hardhat console --network localhost
+  178  cd ..
+  179  ls
+  180  cd scripts
+  181  ls
+  182  vi test.js
+  183  rm test.js
+  184  vi test.js
+  185  node test.js
+  186  vi test.js
+  187  node test.js
+  188  vi test.js
+  189  node test.js
+  190  cd ..
+  191  cd src
+  192  ls
+  193  vi App.js
+  194  rm App.js
+  195  vi App.js
+  196  cd ..
+  197  npx hardhat console --network localhost
+  198  cd src
+  199  npx hardhat console --network localhost
+  200  ls
+  201  cd hello
+  202  ls
+  203  cd src
+  204  ls
+  205  vi App.js
+  206  cd ..
+  207  npm start
+  208  ls
+  209  cd fundraiser/
+  210  ls
+  211  npx   hardhat run scripts/deploy.js --network localhost
+  212  npm start
+  213  cd src
+  214  vi App.js
+  215  cd ..
+  216  npm start
+  217  cd src
+  218  vi Home.js
+  219  vi FundraiserCard.js
+  220  vi App.js
+  221  cd ..
+  222  npm start
+  223  vi Fundraiser.json
+  224  history
+  225  npm install cryptocompare --save
+  226  npm start
+  227  ls -l Fund*
+  228  cp Fundraiser.json src
+  229  npm start
+  230  ls
+  231  cd src
+  232  ls
+  233  cd ..
+  234  ls
+  235  cp Fundraiser.json   contracts/Fundraiser.json
+  236  npm start
+  237  cd contracts/
+  238  ls
+  239  vi Fundraiser.json
+  240  cd ..
+  241  cd src
+  242  vi FundraiserCard.js
+  243  vi App.js
+  244  cd ..
+  245  npm start
+  246  cd src
+  247  ls
+  248  mkdir contracts
+  249  cp Fundraiser.json  contracts
+  250  cd ..
+  251  npm start
+  252  cd src.
+  253  ls
+  254  cd src
+  255  ls
+  256  vi App.js
+  257  cd ..
+  258  npm start
+  259  cd src
+  260  vi App.js
+  261  cd ..
+  262  npm start
+  263  cd src
+  264  vi App.js
+  265  cd ..
+  266  npm start
+  267  cd src
+  268  vi App.js
+  269  cd ..
+  270  npm start
+  271  cd src
+  272  vi App.js
+  273  cd ..
+  274  npm start
+  275  npm install react-dom  --save
+  276  npm start
+  277  cd src
+  278  vi App.js
+  279  cd ..
+  280  npm start
+  281  npm ls react-dom
+  282  npm ls react
+  283  cd src
+  284  vi App.js
+  285  cd ..
+  286  npm start
+  287  history
+ubuntu@ip-172-31-35-138:~/fundraiser$
