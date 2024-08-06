@@ -1,0 +1,61 @@
+
+import NewFundraiser from './NewFundraiser'
+import Home from './Home'
+
+
+Can't resolve 'cryptocompare'
+
+
+
+ubuntu@ip-172-31-35-138:~/fundraiser$ npm install cryptocompare --save
+
+
+
+
+   <Routes>
+        <Route path="/" exact element={<Home/>} />
+        <Route path="/new/" element={<NewFundraiser/>} />
+      </Routes>
+
+
+Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+2bundle.js:93598 Uncaught Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://reactjs.org/link/invalid-hook-call for tips about how to debug and fix this problem.
+    at resolveDispatcher (bundle.js:93598:17)
+    at Object.useRef (bundle.js:93632:24)
+    at BrowserRouter (bundle.js:88927:55)
+    at renderWithHooks (bundle.js:20666:22)
+    at mountIndeterminateComponent (bundle.js:24637:17)
+    at beginWork (bundle.js:25940:20)
+    at HTMLUnknownElement.callCallback (bundle.js:10922:18)
+    at Object.invokeGuardedCallbackDev (bundle.js:10966:20)
+    at invokeGuardedCallback (bundle.js:11023:35)
+    at beginWork$1 (bundle.js:30921:11)Understand this error
+bundle.js:23447 The above error occurred in the <BrowserRouter> component:
+
+    at BrowserRouter (http://ec2-35-87-143-12.us-west-2.compute.amazonaws.com:3000/static/js/bundle.js:88922:5)
+    at div
+    at App (http://ec2-35-87-143-12.us-west-2.compute.amazonaws.com:3000/static/js/bundle.js:57:76)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+logCapturedError @ bundle.js:23447Understand this error
+bundle.js:30481 Uncaught Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://reactjs.org/link/invalid-hook-call for tips about how to debug and fix this problem.
+    at resolveDispatcher (bundle.js:93598:17)
+    at Object.useRef (bundle.js:93632:24)
+    at BrowserRouter (bundle.js:88927:55)
+    at renderWithHooks (bundle.js:20666:22)
+    at mountIndeterminateComponent (bundle.js:24637:17)
+    at beginWork (bundle.js:25940:20)
+    at beginWork$1 (bundle.js:30899:18)
+    at performUnitOfWork (bundle.js:30169:16)
+    at workLoopSync (bundle.js:30092:9)
+
+https://legacy.reactjs.org/warnings/invalid-hook-call-warning.html
